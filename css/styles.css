@@ -1,0 +1,238 @@
+/* Герой */
+
+.hero {
+  text-align: center;
+  justify-content: center;
+  padding: 200px 0;
+}
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../image/hero.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--accent-white);
+}
+/* Button */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 136px;
+  text-align: center;
+
+  background-color: var(--accent-text-color);
+  color: var(--accent-white);
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+/* Sections */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.promo {
+  display: inline-flex;
+}
+.promo .center + .center {
+  margin-left: 30px;
+}
+
+.center-fon {
+  width: 270px;
+  height: 120px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 25px 102px;
+
+  background-color: var(--background-color);
+  border-radius: 4px;
+}
+
+.section-fon {
+  padding: 94px 0;
+}
+.section-title,
+.section-subtitle,
+.section-people {
+  color: var(--title-text-color);
+}
+.section-lead {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  text-align: center;
+
+  color: var(--accent-white);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.section-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-text,
+.section-lead {
+  margin: 0;
+}
+
+.section-subtitle,
+.section-lead .end {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.section-title.two {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.work {
+  display: flex;
+}
+.work-two {
+  width: 370px;
+  height: 294px;
+  position: relative;
+}
+.work .work-two + .work-two {
+  margin-left: 30px;
+}
+.section-people {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.section-fon p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.section-fon {
+  background-color: var(--background-color);
+}
+.team {
+  display: flex;
+}
+.team .member + .member {
+  margin-left: 30px;
+}
+.member {
+  width: 270px;
+  height: 422px;
+  background-color: var(--accent-white);
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.img {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.member-text {
+  text-align: center;
+}
+
+.soсial {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: var(--primary-text-color);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-text-color);
+  fill: var(--accent-white);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Clients */
+.section-title.three {
+  margin-bottom: 50px;
+}
+.logos {
+  display: inline-flex;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid var(--color-client-icon);
+  fill: var(--color-client-icon);
+}
+
+.logos .pic + .pic {
+  margin-left: 30px;
+}
+
+.pic:hover {
+  fill: var(--accent-text-color);
+  border: 1px solid var(--accent-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
