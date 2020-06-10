@@ -62,7 +62,62 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <a href="" class="button">Заказать услугу</a>
+        <button class="button" data-open-modal>
+          Заказать услугу
+        </button>
+        <div class="backdrop is-hidden" data-backdrop>
+          <div class="modal">
+            <form class="form js-speaker-form">
+              <h2 class="form-title">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
+              <div class="form-field">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Имя" />
+              </div>
+
+              <div class="form-field">
+                <label for="tel"></label>
+                <input type="tel" name="tel" id="tel" placeholder="Телефон" />
+              </div>
+
+              <div class="form-field">
+                <label for="email"></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Почта"
+                />
+              </div>
+              <div class="form-field comment">
+                <label for="comment"></label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  cols=""
+                  rows=""
+                  placeholder="Комментарий"
+                ></textarea>
+              </div>
+              <div class="policy">
+                <input type="checkbox" name="policy" id="policy" />
+                <label for="policy"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="">Условия договора</a>
+                </label>
+              </div>
+              <div class="form-button">
+                <button class="button" type="submit">Отправить</button>
+              </div>
+              <button class="btn-modal" data-close-modal>
+                <svg class="icon-close">
+                  <use href="./image/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
 
       <section class="section">
@@ -480,16 +535,16 @@
           </ul>
         </div>
 
-        <form class="form js-speaker-form">
+        <form class="form-footer js-speaker-form">
           <div class="footer-text">
             <b class="end footer-end">ПОДПИШИТЕСЬ НА РАССЫЛКУ </b>
           </div>
-          <div class="form-field">
+          <div class="form-email">
             <input type="email" name="mail" id="mail" placeholder="E-mail" />
           </div>
         </form>
 
-        <div class="form-button">
+        <div class="footer-button">
           <button type="submit" class="button two">Подписаться</button>
         </div>
       </div>
@@ -498,6 +553,7 @@
         <p class="copyrigth">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+
     <script>
       (() => {
         document
@@ -512,6 +568,27 @@
             e.currentTarget.reset();
           });
       })();
+    </script>
+
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Это клик в бекдроп");
+      }
     </script>
   </body>
 </html>

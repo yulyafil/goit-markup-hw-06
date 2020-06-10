@@ -227,6 +227,7 @@ ul .site-nav,
 }
 .address-primary {
   font-style: normal;
+  margin-bottom: 9px;
 }
 .address-secondary {
   color: rgba(255, 255, 255, 0.6);
@@ -236,6 +237,9 @@ ul .site-nav,
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.address-secondary.mail {
+  margin-bottom: 9px;
 }
 .footer-link {
   display: inline-block;
@@ -275,10 +279,10 @@ ul .site-nav,
   height: 20px;
   fill: var(--accent-white);
 }
-.form {
+.form-footer {
   margin-left: 92px;
 }
-.form input {
+.form-footer input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -288,7 +292,7 @@ ul .site-nav,
   padding: 18px 12px;
 }
 
-.form-field input::placeholder {
+.form-email input::placeholder {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -305,11 +309,11 @@ ul .site-nav,
 
   border-style: none;
 }
-.form-button {
+.footer-button {
   position: absolute;
   content: "";
   right: 0;
-  bottom: 40px;
+  bottom: 41px;
 }
 
 .button.two::after {
