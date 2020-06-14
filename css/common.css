@@ -291,7 +291,9 @@ ul .site-nav,
   background-color: #2f303a;
   padding: 18px 12px;
 }
-
+.form-email {
+  display: flex;
+}
 .form-email input::placeholder {
   font-size: 16px;
   line-height: 1.87;
@@ -310,10 +312,10 @@ ul .site-nav,
   border-style: none;
 }
 .footer-button {
-  position: absolute;
-  content: "";
+  display: inline-flex;
+
   right: 0;
-  bottom: 41px;
+  bottom: 0;
 }
 
 .button.two::after {
